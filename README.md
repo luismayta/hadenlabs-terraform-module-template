@@ -12,7 +12,7 @@
 
   -->
 
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/hadenlabs/terraform-module-template?label=latest&sort=semver)](https://github.com/hadenlabs/terraform-module-template/releases) [![Latest Release](https://img.shields.io/github/release/hadenlabs/terraform-module-template)](https://github.com/hadenlabs/terraform-module-template/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/lint-code)](https://github.com/hadenlabs/terraform-module-template/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/terraform-module-template)](https://github.com/hadenlabs/terraform-module-template/issues) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735)](https://keepachangelog.com)
+[![GitHub release](https://img.shields.io/github/release/hadenlabs/terraform-module-template?style=flat-square)](https://github.com/hadenlabs/terraform-module-template/releases/latest) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/lint-code)](https://github.com/hadenlabs/terraform-module-template/actions?workflow=lint-code) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735)](https://keepachangelog.com)
 
 # terraform-module-template
 
