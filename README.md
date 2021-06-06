@@ -12,29 +12,70 @@
 
   -->
 
-# base-template
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/hadenlabs/terraform-module-template?label=latest&sort=semver)](https://github.com/hadenlabs/terraform-module-template/releases) [![Latest Release](https://img.shields.io/github/release/hadenlabs/terraform-module-template)](https://github.com/hadenlabs/terraform-module-template/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/lint-code)](https://github.com/hadenlabs/terraform-module-template/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/terraform-module-template)](https://github.com/hadenlabs/terraform-module-template/issues) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735)](https://keepachangelog.com)
 
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/hadenlabs/base-template?label=latest&sort=semver)](https://github.com/hadenlabs/base-template/releases) [![Latest Release](https://img.shields.io/github/release/hadenlabs/base-template)](https://github.com/hadenlabs/base-template/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/base-template/lint-code)](https://github.com/hadenlabs/base-template/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/base-template)](https://github.com/hadenlabs/base-template/issues) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735)](https://keepachangelog.com)
+# terraform-module-template
 
-base-template for project
+terraform-module-template for project
 
 ### Replace name project to New Project
 
 ```bash
-  agr 'base-template' 'new-project'
+  agr 'terraform-module-template' 'new-project'
 ```
+
+```hcl
+  module "main" {
+  }
+```
+
+Full working examples can be found in [examples](./examples) folder.
+
+## Examples
+
+### common
+
+ <!-- BEGIN_TF_DOCS -->
+
+## Requirements
+
+| Name                                                                     | Version |
+| ------------------------------------------------------------------------ | ------- |
+| <a name="requirement_terraform"></a> [terraform](#requirement_terraform) | >= 0.13 |
+
+## Providers
+
+No providers.
+
+## Modules
+
+No modules.
+
+## Resources
+
+No resources.
+
+## Inputs
+
+No inputs.
+
+## Outputs
+
+No outputs.
+
+<!-- END_TF_DOCS -->
 
 ## Help
 
 **Got a question?**
 
-File a GitHub [issue](https://github.com/hadenlabs/base-template/issues).
+File a GitHub [issue](https://github.com/hadenlabs/terraform-module-template/issues).
 
 ## Contributing
 
 ### Bug Reports & Feature Requests
 
-Please use the [issue tracker](https://github.com/hadenlabs/base-template/issues) to report any bugs or file feature requests.
+Please use the [issue tracker](https://github.com/hadenlabs/terraform-module-template/issues) to report any bugs or file feature requests.
 
 ### Development
 
@@ -75,6 +116,6 @@ All other trademarks referenced herein are the property of their respective owne
 
 The code and styles are licensed under the LGPL-3.0 license [See project license.](LICENSE).
 
-## Don't forget to 🌟 Star 🌟 the repo if you like base-template
+## Don't forget to 🌟 Star 🌟 the repo if you like terraform-module-template
 
-[Your feedback is appreciated](https://github.com/hadenlabs/base-template/issues)
+[Your feedback is appreciated](https://github.com/hadenlabs/terraform-module-template/issues)
