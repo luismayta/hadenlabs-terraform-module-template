@@ -5,7 +5,7 @@ default_language_version:
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit
-    rev: v2.12.1
+    rev: v2.13.0
     hooks:
       - id: validate_manifest
   - repo: https://github.com/codespell-project/codespell
@@ -30,7 +30,7 @@ repos:
         args: []
         files: .py$
   - repo: https://github.com/pre-commit/mirrors-pylint
-    rev: v3.0.0a1
+    rev: v3.0.0a3
     hooks:
       - id: pylint
         exclude: __pycache__|migrations|conf.py|_build|.tox|pootle/static|pootle/translations|pootle/locale|pootle/assets|templates
@@ -39,11 +39,11 @@ repos:
           - --disable=no-name-in-module,import-error,ungrouped-imports
           - --ignore=settings_test, migrations
   - repo: https://github.com/ambv/black
-    rev: 20.8b1
+    rev: 21.5b2
     hooks:
       - id: black
   - repo: https://gitlab.com/pycqa/flake8
-    rev: 3.9.1
+    rev: 3.9.2
     hooks:
       - id: flake8
   - repo: https://github.com/pre-commit/mirrors-mypy
@@ -54,7 +54,7 @@ repos:
           - --ignore-missing-imports
         exclude: migrations|conf.py|_build|.tox|pootle/static|pootle/translations|pootle/locale|pootle/assets|templates
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.4.0
+    rev: v4.0.1
     hooks:
       - id: detect-private-key
         files: ^(?!\.?git-crypt)
@@ -89,7 +89,7 @@ repos:
         additional_dependencies:
           - black
   - repo: https://github.com/hadenlabs/pre-commit-hooks
-    rev: ab7a684f0ab65a90038ea540eaa2afbed1b246be
+    rev: 2bed7c6ec4930b235aaf54aff1cf34e3df694f37
     hooks:
       - id: do-not-commit
       - id: markdown-link-check
