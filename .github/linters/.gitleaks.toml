@@ -236,16 +236,23 @@ title = "gitleaks config"
     '''^\.gitignore$''',
     '''^\.gitleaks.toml$''',
     '''^yarn.lock$''',
+    '''^sonar-project.properties$''',
+  ]
+  paths = [
     '''^vendor/(.*?)$''',
     '''^node_modules/(.*?)$''',
   ]
 
 [whitelist]
   description = "image and html allowlists"
-	files = [
+  files = [
     '''(.*?)(jpg|gif|png|doc|pdf|bin|mp3|mp4|mov|ttf|woff|woff2|eot|lock)$''',
-    '''^\.gitleaks.toml$''',
-    '''^sonar-project.properties$''',
     '''^\.gitignore$''',
+    '''^\.gitleaks.toml$''',
     '''^yarn.lock$''',
+    '''^sonar-project.properties$''',
+  ]
+  paths = [
+    '''^vendor/(.*?)$''',
+    '''^node_modules/(.*?)$''',
   ]
