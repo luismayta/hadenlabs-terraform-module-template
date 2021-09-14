@@ -27,23 +27,19 @@ on:
 jobs:
   sonar-scan:
     runs-on: ubuntu-20.04
+
     steps:
       - name: Check out a copy of the repo
         if: ${{ !env.ACT }}
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: set vars to github
-        run: |
-          echo "APP_TAG=${{ steps.get_version.outputs.version-without-v }}" >> $GITHUB_ENV
-          echo "SONAR_HOST_URL=${{ secrets.SONAR_HOST_URL }}" >> $GITHUB_ENV
-          echo "SONAR_LOGIN=${{ secrets.SONAR_LOGIN }}" >> $GITHUB_ENV
 
       - name: Install Task
         uses: arduino/setup-task@v1
 
-      - name: Check dependences
-        run: task sonar:check
-
       - name: Scan Sonar
+        env:
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_LOGIN: ${{ secrets.SONAR_LOGIN }}
         run: task sonar:scan
