@@ -29,21 +29,29 @@ github_repo: hadenlabs/terraform-module-template
 
 # Badges to display
 badges:
-  - name: GitHub release
-    image: https://img.shields.io/github/release/hadenlabs/terraform-module-template?style=flat-square
-    url: https://github.com/hadenlabs/terraform-module-template/releases/latest
+  - name: Latest Release
+    image: https://img.shields.io/github/release/hadenlabs/terraform-module-template
+    url: https://github.com/hadenlabs/terraform-module-template/releases
   - name: Lint
     image: https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/lint-code
-    url: https://github.com/hadenlabs/terraform-module-template/actions
-  - name: Issues
-    image: https://img.shields.io/github/issues/hadenlabs/terraform-module-template
-    url: https://github.com/hadenlabs/terraform-module-template/issues
+    url: https://github.com/hadenlabs/terraform-module-template/actions?workflow=lint-code
+  - name: pre-commit
+    image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+    url: https://github.com/pre-commit/pre-commit
   - name: Conventional Commits
     image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
     url: https://conventionalcommits.org
   - name: KeepAChangelog
     image: https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735
     url: https://keepachangelog.com
+
+requirements: |-
+
+  This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
+
+  - [docker](https://www.docker.com)
+  - [python](https://www.python.org)
+  - [taskfile](https://github.com/go-task/task)
 
 # Short description of this project
 description: |-
