@@ -35,11 +35,14 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Add environment variables to .env
+        run: |
+          echo SONAR_HOST_URL=${{ secrets.SONAR_HOST_URL }} >> .env
+          echo SONAR_LOGIN=${{ secrets.SONAR_LOGIN }} >> .env
+
       - name: Install Task
         uses: arduino/setup-task@v1
 
       - name: Scan Sonar
         env:
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-          SONAR_LOGIN: ${{ secrets.SONAR_LOGIN }}
         run: task sonar:scan
