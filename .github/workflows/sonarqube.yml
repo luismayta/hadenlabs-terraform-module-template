@@ -44,5 +44,4 @@ jobs:
         uses: arduino/setup-task@v1
 
       - name: Scan Sonar
-        env:
         run: task sonar:scan
