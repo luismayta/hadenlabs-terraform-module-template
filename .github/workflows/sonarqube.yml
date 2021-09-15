@@ -43,9 +43,4 @@ jobs:
 
       - name: Scan Sonar
         if: ${{ !env.ACT }}
-        run: |-
-          docker run --rm -v $(pwd)/:/usr/src \
-          -e SONAR_HOST_URL=$SONAR_HOST_URL \
-          -e SONAR_LOGIN=$SONAR_LOGIN \
-          sonarsource/sonar-scanner-cli:latest \
-          sonar-scanner
+        run: task sonar:scan
