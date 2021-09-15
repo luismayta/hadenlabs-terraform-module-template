@@ -27,6 +27,9 @@ on:
 jobs:
   sonar-scan:
     runs-on: ubuntu-20.04
+    env:
+      SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+      SONAR_LOGIN: ${{ secrets.SONAR_LOGIN }}
 
     steps:
       - name: Check out a copy of the repo
@@ -35,13 +38,9 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Add environment variables to .env
-        run: |
-          echo SONAR_HOST_URL=${{ secrets.SONAR_HOST_URL }} >> .env
-          echo SONAR_LOGIN=${{ secrets.SONAR_LOGIN }} >> .env
-
       - name: Install Task
         uses: arduino/setup-task@v1
 
       - name: Scan Sonar
+        if: ${{ !env.ACT }}
         run: task sonar:scan
