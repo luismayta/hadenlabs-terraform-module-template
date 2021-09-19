@@ -24,19 +24,20 @@ on:
       # prerelease tags, more or less
       - 'v[0-9]+.[0-9]+.[0-9]+-*'
 
+env:
+  SONAR_HOST_URL: '${{ secrets.SONAR_HOST_URL }}'
+  SONAR_LOGIN: '${{ secrets.SONAR_LOGIN }}'
+
 jobs:
   sonar-scan:
     runs-on: ubuntu-20.04
-    env:
-      SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-      SONAR_LOGIN: ${{ secrets.SONAR_LOGIN }}
 
     steps:
       - name: Check out a copy of the repo
         if: ${{ !env.ACT }}
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          fetch-depth: 2
 
       - name: Install Task
         uses: arduino/setup-task@v1
