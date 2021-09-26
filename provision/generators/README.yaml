@@ -18,6 +18,10 @@ categories:
 email:
   support: support@hadenlabs.com
 
+confluence:
+  space: TerraformModuleTemplate
+  title: Project
+
 # Logo for this project
 #logo: docs/logo.png
 
@@ -35,6 +39,12 @@ badges:
   - name: Lint
     image: https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/lint-code
     url: https://github.com/hadenlabs/terraform-module-template/actions?workflow=lint-code
+  - name: CI
+    image: https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/ci
+    url: https://github.com/hadenlabs/terraform-module-template/actions?workflow=ci
+  - name: Test
+    image: https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/test
+    url: https://github.com/hadenlabs/terraform-module-template/actions?workflow=test
   - name: pre-commit
     image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
     url: https://github.com/pre-commit/pre-commit
@@ -49,7 +59,8 @@ requirements: |-
 
   This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
-  - [docker](https://www.docker.com)
+  - [Pyenv](https://github.com/pyenv/pyenv)
+  - [Docker](https://www.docker.com/)
   - [python](https://www.python.org)
   - [taskfile](https://github.com/go-task/task)
 
@@ -64,8 +75,23 @@ description: |-
     agr 'terraform-module-template' 'new-project'
   ```
 
+# How to use this project
+usage: |-
+
   ```hcl
     module "main" {
+      source  = "app.terraform.io/hadenlabs/terraform-module-template/aws"
+      version = "0.1.1"
+
+      providers = {
+        aws = aws
+        template = template
+        local = local
+      }
+      name        = var.name
+      public_key  = var.public_key
+      private_key = var.public_key
+
     }
   ```
 
