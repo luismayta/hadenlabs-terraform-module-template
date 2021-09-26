@@ -54,13 +54,6 @@ export const testGenerator: PlopGeneratorConfig = {
 
     actions.push({
       type: 'add',
-      templateFile: `${baseTemplatesPath}/test/provider.add.hbs`,
-      path: `${containerPath}/provider.tf`,
-      abortOnFail: true
-    })
-
-    actions.push({
-      type: 'add',
       templateFile: `${baseTemplatesPath}/test/variables.add.hbs`,
       path: `${containerPath}/variables.tf`,
       abortOnFail: true
