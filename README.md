@@ -1,3 +1,6 @@
+ <!-- Space: TerraformModuleTemplate -->
+<!-- Title: Project -->
+
 <!--
 
 
@@ -12,7 +15,7 @@
 
   -->
 
-[![Latest Release](https://img.shields.io/github/release/hadenlabs/terraform-module-template)](https://github.com/hadenlabs/terraform-module-template/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/lint-code)](https://github.com/hadenlabs/terraform-module-template/actions?workflow=lint-code) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735)](https://keepachangelog.com)
+[![Latest Release](https://img.shields.io/github/release/hadenlabs/terraform-module-template)](https://github.com/hadenlabs/terraform-module-template/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/lint-code)](https://github.com/hadenlabs/terraform-module-template/actions?workflow=lint-code) [![CI](https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/ci)](https://github.com/hadenlabs/terraform-module-template/actions?workflow=ci) [![Test](https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/test)](https://github.com/hadenlabs/terraform-module-template/actions?workflow=test) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735)](https://keepachangelog.com)
 
 # terraform-module-template
 
@@ -24,24 +27,55 @@ terraform-module-template for project
   agr 'terraform-module-template' 'new-project'
 ```
 
+## Requirements
+
+This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
+
+- [Pyenv](https://github.com/pyenv/pyenv)
+- [Docker](https://www.docker.com/)
+- [python](https://www.python.org)
+- [taskfile](https://github.com/go-task/task)
+
+## Usage
+
 ```hcl
   module "main" {
+    source  = "app.terraform.io/hadenlabs/terraform-module-template/aws"
+    version = "0.1.1"
+
+    providers = {
+      aws = aws
+      template = template
+      local = local
+    }
+    name        = var.name
+    public_key  = var.public_key
+    private_key = var.public_key
+
   }
 ```
 
 Full working examples can be found in [examples](./examples) folder.
 
-## Requirements
-
-This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
-
-- [docker](https://www.docker.com)
-- [python](https://www.python.org)
-- [taskfile](https://github.com/go-task/task)
-
 ## Examples
 
 ### common
+
+```hcl
+  module "main" {
+    source  = "app.terraform.io/hadenlabs/terraform-module-template/aws"
+    version = "0.1.1"
+
+    providers = {
+      aws = aws
+      template = template
+      local = local
+    }
+    name        = var.name
+    public_key  = var.public_key
+    private_key = var.private_key
+  }
+```
 
  <!-- BEGIN_TF_DOCS -->
 
