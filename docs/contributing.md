@@ -1,3 +1,7 @@
+<!-- Space: TerraformModuleTemplate -->
+<!-- Parent: Project -->
+<!-- Title: How To Contribute -->
+
 # How To Contribute
 
 Contributions to terraform-module-template are welcome.
