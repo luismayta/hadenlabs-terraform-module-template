@@ -29,6 +29,7 @@ repos:
         exclude: >
           (?x)^(
             .+\.gitleaks.toml$|
+            test/fixtures/keys/.*-test.*$
           )$
       - id: check-merge-conflict
       - id: check-added-large-files
@@ -72,7 +73,6 @@ repos:
         args:
           - '--output-file=docs/include/terraform.md'
           - '--output-mode=replace'
-          - '--sort-by-type'
 
       - id: terraform-tflint
         args:
