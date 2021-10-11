@@ -4,11 +4,19 @@ import (
 	"testing"
 
 	"github.com/gruntwork-io/terratest/modules/terraform"
+
+	"github.com/hadenlabs/terraform-module-template/config"
 	"github.com/stretchr/testify/assert"
+	"github.com/hadenlabs/terraform-module-template/internal/common/log"
 )
 
 func Test{{pascalCase testName}}Success(t *testing.T) {
 	t.Parallel()
+	conf := config.Must()
+	logger := log.Factory(*conf)
+	logger.Debugf(
+		"values for test terraform-module-template is",
+	)
 
 	terraformOptions := &terraform.Options{
 		// The path to where your Terraform code is located
