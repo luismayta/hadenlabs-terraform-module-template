@@ -40,18 +40,8 @@ This is a list of plugins that need to be installed previously to enjoy all the 
 
 ```hcl
   module "main" {
-    source  = "app.terraform.io/hadenlabs/terraform-module-template/aws"
-    version = "0.1.1"
-
-    providers = {
-      aws = aws
-      template = template
-      local = local
-    }
-    name        = var.name
-    public_key  = var.public_key
-    private_key = var.public_key
-
+    source  = "hadenlabs/terraform-module-template/aws"
+    version = "0.0.0"
   }
 ```
 
@@ -63,17 +53,9 @@ Full working examples can be found in [examples](./examples) folder.
 
 ```hcl
   module "main" {
-    source  = "app.terraform.io/hadenlabs/terraform-module-template/aws"
-    version = "0.1.1"
+    source  = "hadenlabs/terraform-module-template/aws"
+    version = "0.0.0"
 
-    providers = {
-      aws = aws
-      template = template
-      local = local
-    }
-    name        = var.name
-    public_key  = var.public_key
-    private_key = var.private_key
   }
 ```
 
