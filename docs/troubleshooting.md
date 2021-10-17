@@ -2,6 +2,10 @@
 <!-- Parent: Project -->
 <!-- Title: Troubleshooting -->
 
+<!-- Label: Troubleshooting -->
+<!-- Include: docs/disclaimer.md -->
+<!-- Include: ac:toc -->
+
 # Troubleshooting
 
 ## Environment

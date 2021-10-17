@@ -2,6 +2,10 @@
 <!-- Parent: Project -->
 <!-- Title: How To Contribute -->
 
+<!-- Label: Contributing -->
+<!-- Include: docs/disclaimer.md -->
+<!-- Include: ac:toc -->
+
 # How To Contribute
 
 Contributions to terraform-module-template are welcome.
