@@ -1,21 +1,11 @@
 <!-- Space: TerraformModuleTemplate -->
 <!-- Parent: Project -->
-<!-- Title: Troubleshooting -->
+<!-- Title: Components -->
 
 <!-- Label: TerraformModuleTemplate -->
 <!-- Label: Project -->
-<!-- Label: Troubleshooting -->
+<!-- Label: Components -->
 <!-- Include: docs/disclaimer.md -->
 <!-- Include: ac:toc -->
 
-# Troubleshooting
-
-## Environment
-
-### Wrong pre-commit with pipenv
-
-Execute the next:
-
-```{.bash}
-task environment
-```
+# components

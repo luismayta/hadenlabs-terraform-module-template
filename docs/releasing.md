@@ -2,6 +2,8 @@
 <!-- Parent: Project -->
 <!-- Title: Releasing -->
 
+<!-- Label: TerraformModuleTemplate -->
+<!-- Label: Project -->
 <!-- Label: Releasing -->
 <!-- Include: docs/disclaimer.md -->
 <!-- Include: ac:toc -->
