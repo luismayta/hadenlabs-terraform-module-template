@@ -31,6 +31,6 @@ func Test{{pascalCase testName}}Success(t *testing.T) {
 
 	// This will run `terraform init` and `terraform apply` and fail the test if there are any errors
 	terraform.InitAndApply(t, terraformOptions)
-	outputInstance := terraform.Output(t, terraformOptions, "instance")
-	assert.NotEmpty(t, outputInstance, outputInstance)
+	outputID := terraform.Output(t, terraformOptions, "id")
+	assert.NotEmpty(t, outputID, outputID)
 }
