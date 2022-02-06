@@ -15,7 +15,7 @@
 
   -->
 
-[![Latest Release](https://img.shields.io/github/release/hadenlabs/terraform-module-template)](https://github.com/hadenlabs/terraform-module-template/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/lint-code)](https://github.com/hadenlabs/terraform-module-template/actions?workflow=lint-code) [![CI](https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/ci)](https://github.com/hadenlabs/terraform-module-template/actions?workflow=ci) [![Test](https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/test)](https://github.com/hadenlabs/terraform-module-template/actions?workflow=test) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735)](https://keepachangelog.com)
+[![Latest Release](https://img.shields.io/github/release/hadenlabs/terraform-module-template)](https://github.com/hadenlabs/terraform-module-template/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/lint-code)](https://github.com/hadenlabs/terraform-module-template/actions?workflow=lint-code) [![CI](https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/ci)](https://github.com/hadenlabs/terraform-module-template/actions?workflow=ci) [![Test](https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/test)](https://github.com/hadenlabs/terraform-module-template/actions?workflow=test) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange)](https://keepachangelog.com) [![Terraform Version](https://img.shields.io/badge/terraform-1.x%20|%200.15%20|%200.14%20|%200.13%20|%200.12.20+-623CE4.svg?logo=terraform)](https://github.com/hashicorp/terraform/releases)
 
 # terraform-module-template
 
@@ -31,9 +31,7 @@ terraform-module-template for project
 
 This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
-- [Pyenv](https://github.com/pyenv/pyenv)
-- [Docker](https://www.docker.com/)
-- [python](https://www.python.org)
+- [terraform](https://github.com/hashicorp/terraform)
 - [taskfile](https://github.com/go-task/task)
 
 ## Usage
@@ -51,7 +49,7 @@ Full working examples can be found in [examples](./examples) folder.
 
 <!-- Space: TerraformModuleTemplate -->
 <!-- Parent: Project -->
-<!-- Title: Examples -->
+<!-- Title: Project Examples -->
 
 <!-- Label: Examples -->
 <!-- Include: docs/disclaimer.md -->
@@ -63,7 +61,6 @@ Full working examples can be found in [examples](./examples) folder.
   module "main" {
     source  = "hadenlabs/terraform-module-template/aws"
     version = "0.0.0"
-
   }
 ```
 
@@ -71,9 +68,9 @@ Full working examples can be found in [examples](./examples) folder.
 
 ## Requirements
 
-| Name                                                                     | Version |
-| ------------------------------------------------------------------------ | ------- |
-| <a name="requirement_terraform"></a> [terraform](#requirement_terraform) | >= 0.13 |
+| Name                                                                     | Version           |
+| ------------------------------------------------------------------------ | ----------------- |
+| <a name="requirement_terraform"></a> [terraform](#requirement_terraform) | >= 0.12.20, < 2.0 |
 
 ## Providers
 
@@ -105,22 +102,7 @@ File a GitHub [issue](https://github.com/hadenlabs/terraform-module-template/iss
 
 ## Contributing
 
-### Bug Reports & Feature Requests
-
-Please use the [issue tracker](https://github.com/hadenlabs/terraform-module-template/issues) to report any bugs or file feature requests.
-
-### Development
-
-In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
-
-1.  **Fork** the repo on GitHub
-2.  **Clone** the project to your own machine
-3.  **Commit** changes to your own branch
-4.  **Push** your work back up to your fork
-
-5.  Submit a **Pull Request** so that we can review your changes
-
-**NOTE:** Be sure to rebase the latest changes from "upstream" before making a pull request!
+See [Contributing](./docs/contributing.md).
 
 ## Module Versioning
 
@@ -139,7 +121,7 @@ Using the given version number of `MAJOR.MINOR.PATCH`, we apply the following co
 
 ## Copyright
 
-Copyright © 2018-2021 [Hadenlabs](https://hadenlabs.com)
+Copyright © 2018-2022 [Hadenlabs](https://hadenlabs.com)
 
 ## Trademarks
 
