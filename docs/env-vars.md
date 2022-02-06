@@ -1,6 +1,6 @@
 <!-- Space: TerraformModuleTemplate -->
 <!-- Parent: Project -->
-<!-- Title: Env Vars -->
+<!-- Title: Project Env Vars -->
 
 <!-- Label: TerraformModuleTemplate -->
 <!-- Label: Project -->

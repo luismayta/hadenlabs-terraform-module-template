@@ -1,6 +1,6 @@
 <!-- Space: TerraformModuleTemplate -->
 <!-- Parent: Project -->
-<!-- Title: Contributing -->
+<!-- Title: Project Contributing -->
 
 <!-- Label: TerraformModuleTemplate -->
 <!-- Label: Project -->

@@ -1,6 +1,6 @@
 <!-- Space: TerraformModuleTemplate -->
 <!-- Parent: Project -->
-<!-- Title: Examples -->
+<!-- Title: Project Examples -->
 
 <!-- Label: Examples -->
 <!-- Include: docs/disclaimer.md -->
@@ -12,6 +12,5 @@
   module "main" {
     source  = "hadenlabs/terraform-module-template/aws"
     version = "0.0.0"
-
   }
 ```
