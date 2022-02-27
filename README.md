@@ -1,5 +1,5 @@
- <!-- Space: TerraformModuleTemplate -->
-<!-- Title: Project -->
+ <!-- Space: Projects -->
+<!-- Title: TerraformModuleTemplate -->
 
 <!--
 
@@ -31,38 +31,9 @@ terraform-module-template for project
 
 This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
+- [gomplate](https://github.com/hairyhenderson/gomplate)
 - [terraform](https://github.com/hashicorp/terraform)
 - [taskfile](https://github.com/go-task/task)
-
-## Usage
-
-```hcl
-  module "main" {
-    source  = "hadenlabs/terraform-module-template/aws"
-    version = "0.0.0"
-  }
-```
-
-Full working examples can be found in [examples](./examples) folder.
-
-## Examples
-
-<!-- Space: TerraformModuleTemplate -->
-<!-- Parent: Project -->
-<!-- Title: Project Examples -->
-
-<!-- Label: Examples -->
-<!-- Include: docs/disclaimer.md -->
-<!-- Include: ac:toc -->
-
-### common
-
-```hcl
-  module "main" {
-    source  = "hadenlabs/terraform-module-template/aws"
-    version = "0.0.0"
-  }
-```
 
  <!-- BEGIN_TF_DOCS -->
 
