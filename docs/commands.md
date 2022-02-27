@@ -1,11 +1,11 @@
-<!-- Space: TerraformModuleTemplate -->
-<!-- Parent: Project -->
-<!-- Title: Project Commands -->
+<!-- Space: Projects -->
+<!-- Parent: TerraformModuleTemplate -->
+<!-- Title: Commands TerraformModuleTemplate -->
 
 <!-- Label: TerraformModuleTemplate -->
 <!-- Label: Project -->
 <!-- Label: Commands -->
-<!-- Include: docs/disclaimer.md -->
+<!-- Include: disclaimer.md -->
 <!-- Include: ac:toc -->
 
 ## Commands
