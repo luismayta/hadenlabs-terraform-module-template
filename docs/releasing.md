@@ -1,11 +1,11 @@
-<!-- Space: TerraformModuleTemplate -->
-<!-- Parent: Project -->
-<!-- Title: Project Releasing -->
+<!-- Space: Projects -->
+<!-- Parent: TerraformModuleTemplate -->
+<!-- Title: Releasing TerraformModuleTemplate -->
 
 <!-- Label: TerraformModuleTemplate -->
 <!-- Label: Project -->
 <!-- Label: Releasing -->
-<!-- Include: docs/disclaimer.md -->
+<!-- Include: disclaimer.md -->
 <!-- Include: ac:toc -->
 
 # Releasing
