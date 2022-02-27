@@ -19,8 +19,8 @@ email:
   support: support@hadenlabs.com
 
 confluence:
-  space: TerraformModuleTemplate
-  title: Project
+  space: Projects
+  title: TerraformModuleTemplate
 
 # Logo for this project
 #logo: docs/logo.png
@@ -61,6 +61,7 @@ badges:
 requirements: |-
 
   This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
+  - [gomplate](https://github.com/hairyhenderson/gomplate)
   - [terraform](https://github.com/hashicorp/terraform)
   - [taskfile](https://github.com/go-task/task)
 
@@ -86,9 +87,6 @@ usage: |-
   ```
 
   Full working examples can be found in [examples](./examples) folder.
-
-examples:
-  - 'docs/examples/common.md'
 
 include:
   - 'docs/include/targets.md'
