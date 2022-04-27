@@ -22,7 +22,7 @@ repos:
         args:
           - --config=.ci/linters/.commitlintrc.json
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.1.0
+    rev: v4.2.0
     hooks:
       - id: detect-private-key
         files: ^(?!\.?git-crypt)
@@ -38,6 +38,8 @@ repos:
       - id: check-json
       - id: check-xml
       - id: check-yaml
+        args:
+          - --allow-multiple-documents
       - id: check-byte-order-marker
       - id: check-ast
       - id: debug-statements
@@ -48,7 +50,7 @@ repos:
       - id: fix-encoding-pragma
       - id: sort-simple-yaml
   - repo: https://github.com/hadenlabs/pre-commit-hooks
-    rev: 6b8844d2f51d422470b7056c2dec3f0c854f37bc
+    rev: 47e07f691058d12b2f8f49912b5568654d26331f
     hooks:
       - id: do-not-commit
       - id: markdown-link-check
@@ -91,7 +93,7 @@ repos:
         args:
           - --config=.ci/linters/.hadolint.yaml
   - repo: https://github.com/bridgecrewio/checkov.git
-    rev: '2.0.906'
+    rev: '2.0.1088'
     hooks:
       - id: checkov
         args:

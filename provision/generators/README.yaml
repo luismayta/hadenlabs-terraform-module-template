@@ -18,10 +18,6 @@ categories:
 email:
   support: support@hadenlabs.com
 
-confluence:
-  space: Projects
-  title: TerraformModuleTemplate
-
 # Logo for this project
 #logo: docs/logo.png
 
@@ -61,6 +57,7 @@ badges:
 requirements: |-
 
   This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
+
   - [gomplate](https://github.com/hairyhenderson/gomplate)
   - [terraform](https://github.com/hashicorp/terraform)
   - [taskfile](https://github.com/go-task/task)
@@ -75,18 +72,11 @@ description: |-
   ```bash
     agr 'terraform-module-template' 'new-project'
   ```
+usages:
+  - docs/usage.md
 
-# How to use this project
-usage: |-
-
-  ```hcl
-    module "main" {
-      source  = "hadenlabs/terraform-module-template/aws"
-      version = "0.0.0"
-    }
-  ```
-
-  Full working examples can be found in [examples](./examples) folder.
+examples:
+  - 'docs/examples/common.md'
 
 include:
   - 'docs/include/targets.md'

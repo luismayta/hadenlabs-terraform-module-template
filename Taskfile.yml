@@ -51,6 +51,7 @@ vars:
     .secrets
     TMP_CHANGELOG.md
     .task
+    .terraform.lock.hcl
     *.lock.hcl
     .external_modules
 
