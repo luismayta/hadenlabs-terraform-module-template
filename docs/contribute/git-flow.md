@@ -15,9 +15,9 @@ To contribute to terraform-module-template project on [GitHub](https://github.co
 
 ## Getting started
 
-To follow the instructions in this guide and start contributing to terraform-module-template project on Gitlab:
+To follow the instructions in this guide and start contributing to terraform-module-template project on Github:
 
-1.  **Fork** the repo on GitLab
+1.  **Fork** the repo on GitHub
 2.  **Clone** the project to your own machine
 
 To synchronize with the main repository, add it to the remotes:
