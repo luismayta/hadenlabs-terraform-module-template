@@ -15,6 +15,7 @@ includes:
   sonar: ./provision/task/sonar.yml
   ssh: ./provision/task/ssh.yml
   diagrams: ./provision/diagrams/Taskfile.yml
+  terraform: ./provision/task/terraform.yml
 
 env:
   DOCKER:
@@ -47,6 +48,7 @@ vars:
     bin
     .scannerwork
     .secrets
+    public
     TMP_CHANGELOG.md
     .task
     .terraform.lock.hcl
@@ -95,6 +97,7 @@ tasks:
         --datasource config={{.README_YAML}}
         --datasource includes={{.README_INCLUDES}}
       - task: prettier
+      - task: terraform:docs:all
 
   prettier:
     run: once
