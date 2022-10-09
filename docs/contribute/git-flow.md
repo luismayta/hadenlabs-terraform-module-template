@@ -1,7 +1,6 @@
 <!-- Space: Projects -->
 <!-- Parent: TerraformModuleTemplate -->
 <!-- Title: Contributing GitFlow TerraformModuleTemplate -->
-
 <!-- Label: TerraformModuleTemplate -->
 <!-- Label: Project -->
 <!-- Label: Contributing -->
