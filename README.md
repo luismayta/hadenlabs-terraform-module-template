@@ -50,7 +50,6 @@ Full working examples can be found in [examples](./examples) folder.
 <!-- Space: Projects -->
 <!-- Parent: TerraformModuleTemplate -->
 <!-- Title: Examples TerraformModuleTemplate -->
-
 <!-- Label: Examples -->
 <!-- Include: ./../disclaimer.md -->
 <!-- Include: ac:toc -->
