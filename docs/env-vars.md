@@ -1,10 +1,9 @@
 <!-- Space: Projects -->
 <!-- Parent: TerraformModuleTemplate -->
-<!-- Title: Env Vars TerraformModuleTemplate -->
-
+<!-- Title: EnvVars TerraformModuleTemplate -->
 <!-- Label: TerraformModuleTemplate -->
 <!-- Label: Project -->
-<!-- Label: Env Vars -->
+<!-- Label: EnvVars -->
 <!-- Include: disclaimer.md -->
 <!-- Include: ac:toc -->
 

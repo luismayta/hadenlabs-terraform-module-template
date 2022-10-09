@@ -1,7 +1,6 @@
 <!-- Space: Projects -->
 <!-- Parent: TerraformModuleTemplate -->
 <!-- Title: Security TerraformModuleTemplate -->
-
 <!-- Label: TerraformModuleTemplate -->
 <!-- Label: Security -->
 <!-- Include: docs/disclaimer.md -->
