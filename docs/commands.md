@@ -123,3 +123,17 @@ task version:minor
 ```{.bash}
 task version:patch
 ```
+
+### Docs
+
+#### build
+
+```{.bash}
+task docs:build
+```
+
+#### server
+
+```{.bash}
+task docs:serve
+```

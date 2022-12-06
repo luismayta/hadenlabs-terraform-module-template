@@ -60,6 +60,7 @@ requirements: |-
 
   - [gomplate](https://github.com/hairyhenderson/gomplate)
   - [terraform](https://github.com/hashicorp/terraform)
+  - [python](https://www.python.org)
   - [taskfile](https://github.com/go-task/task)
 
 # Short description of this project
