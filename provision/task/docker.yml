@@ -30,7 +30,7 @@ tasks:
     deps:
       - task: check
     cmds:
-      - echo "Logging in to DockerHub"
+      - echo "Logging in to {{.CI_REGISTRY}}"
       - >-
         echo -n {{.CI_REGISTRY_PASSWORD}} | docker login -u {{.CI_REGISTRY_USER}} --password-stdin {{.CI_REGISTRY}}
 
@@ -44,7 +44,7 @@ tasks:
         docker build
         --platform={{.DOCKER_PLATFORMS}}
         --file Dockerfile
-        --tag {{.CI_REGISTRY}}/{{.DOCKER_ORGANIZATION}}/{{.DOCKER_IMAGE_NAME}}:{{.APP_TAG}} .
+        --tag {{.CI_REGISTRY}}/{{.GROUP_NAME}}/{{.PROJECT_NAME}}:{{.APP_TAG}} .
         --build-arg VERSION={{.APP_TAG}}
 
   publish:
@@ -58,6 +58,6 @@ tasks:
         --no-cache
         --platform={{.DOCKER_PLATFORMS}}
         --file Dockerfile
-        --tag {{.CI_REGISTRY}}/{{.DOCKER_ORGANIZATION}}/{{.DOCKER_IMAGE_NAME}}:{{.APP_TAG}} .
+        --tag {{.CI_REGISTRY}}/{{.GROUP_NAME}}/{{.PROJECT_NAME}}:{{.APP_TAG}} .
         --build-arg VERSION={{.APP_TAG}}
         --push

@@ -37,14 +37,16 @@ dotenv:
 
 vars:
   PROJECT_NAME: terraform-module-template
+  GROUP_NAME: hadenlabs
   ORGANIZATION: hadenlabs
   REVIEWERS: luismayta
-  PYTHON_VERSION: 3.9.2
+  PYTHON_VERSION: 3.10.6
   NODE_VERSION: 16.6.1
-  GIT_IGNORES: python,node,go,zsh,sonar,terraform,linux
+  GIT_IGNORES: python,node,go,zsh,sonar,java,maven,intellij+all,terraform,linux
+  DOCKER_PLATFORMS: linux/amd64
   GOLANGCI_VERSION: 1.42.0
   README_FILE: README.md
-  GIT_IGNORES_CUSTOM: >-
+  GIT_IGNORES_CUSTOM: |
     bin
     .scannerwork
     .secrets
@@ -53,7 +55,9 @@ vars:
     .task
     .terraform.lock.hcl
     *.lock.hcl
+    *.zip
     .external_modules
+    vendor
 
 tasks:
   default:
@@ -84,6 +88,7 @@ tasks:
       - git:check
       - docs:check
       - yarn:check
+      - sonar:check
       - go:check
 
   readme:
@@ -96,14 +101,21 @@ tasks:
         --out {{.README_FILE}}
         --datasource config={{.README_YAML}}
         --datasource includes={{.README_INCLUDES}}
-      - task: prettier
       - task: terraform:docs:all
+      - task: prettier
 
   prettier:
     run: once
     desc: Execute prettier files
     cmds:
       - task: prettier:all
+
+  upgrade:
+    run: once
+    desc: Execute upgrade packages
+    cmds:
+      - >-
+        pipenv run pre-commit autoupdate
 
   setup:
     desc: Setup dependences of project
@@ -112,9 +124,9 @@ tasks:
         [ -e ".env" ] || cp -rf .env.example .env
       - task: python:setup
       - task: python:precommit
-      - task: git:setup
       - task: go:setup
       - task: yarn:setup
+      - task: git:setup
 
   environment:
     desc: Setup environment of project
