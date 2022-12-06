@@ -30,6 +30,7 @@ This is a list of plugins that need to be installed previously to enjoy all the 
 
 - [gomplate](https://github.com/hairyhenderson/gomplate)
 - [terraform](https://github.com/hashicorp/terraform)
+- [python](https://www.python.org)
 - [taskfile](https://github.com/go-task/task)
 
 ## Usage
@@ -63,13 +64,14 @@ Full working examples can be found in [examples](./examples) folder.
   }
 ```
 
- <!-- BEGIN_TF_DOCS -->
+ <!-- markdown-link-check-disable -->
+<!-- BEGIN_TF_DOCS -->
 
 ## Requirements
 
-| Name                                                                     | Version           |
-| ------------------------------------------------------------------------ | ----------------- |
-| <a name="requirement_terraform"></a> [terraform](#requirement_terraform) | >= 0.12.20, < 2.0 |
+| Name      | Version           |
+| --------- | ----------------- |
+| terraform | >= 0.12.20, < 2.0 |
 
 ## Providers
 
@@ -92,6 +94,7 @@ No inputs.
 No outputs.
 
 <!-- END_TF_DOCS -->
+<!-- markdown-link-check-enable -->
 
 ## Help
 
