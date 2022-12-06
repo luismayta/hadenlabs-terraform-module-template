@@ -5,15 +5,6 @@
       "pattern": "^https://hadenlabs.com"
     },
     {
-      "pattern": "^#output_project.*$"
-    },
-    {
-      "pattern": "^#module_project.*$"
-    },
-    {
-      "pattern": "^#requirement_terraform.*$"
-    },
-    {
       "pattern": "^https://github.com/hadenlabs/terraform-module-template/compare"
     }
   ],
