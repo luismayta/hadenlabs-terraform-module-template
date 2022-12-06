@@ -96,12 +96,12 @@ tasks:
     desc: Generate Readme
     silent: true
     cmds:
+      - task: terraform:docs:all
       - >-
         gomplate --file {{.README_TEMPLATE}}
         --out {{.README_FILE}}
         --datasource config={{.README_YAML}}
         --datasource includes={{.README_INCLUDES}}
-      - task: terraform:docs:all
       - task: prettier
 
   prettier:
